@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Hind+Vadodara");
+body {
+  font-family: 'Hind Vadodara', sans-serif;
+  color: #222222; }
+
+#study-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  #study-table th {
+    text-transform: uppercase;
+    text-align: left;
+    background-color: #B85682;
+    color: #F7F7F7;
+    font-size: 1.1em; }
+  #study-table td {
+    padding: 5px 40px 5px 0; }
+  #study-table tr:nth-child(even) {
+    background-color: #E1E1E1; }
+  #study-table tr:hover {
+    background-color: #F1CBDA;
+    transition: all 300ms ease-in-out; }
+  #study-table .study-table-btn {
+    border: none;
+    border-radius: 5px;
+    background: #B85682;
+    color: #F7F7F7;
+    transition: all 500ms ease-in-out; }
+  #study-table .study-table-btn:hover {
+    background-color: #921111;
+    cursor: pointer; }
+  #study-table .inProgress {
+    color: #C89C2D;
+    font-weight: 600; }
+  #study-table .completed {
+    color: #5A0129;
+    font-weight: 600; }
+  #study-table .notStarted {
+    font-weight: 600; }
+
+/*# sourceMappingURL=main.css.map */

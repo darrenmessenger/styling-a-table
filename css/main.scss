@@ -1,0 +1,84 @@
+// Need to import the brand font
+@import url('https://fonts.googleapis.com/css?family=Hind+Vadodara');
+// Define some variables
+$primary-5: #5A0129; // Darkest Primary Color
+$primary-4: #873B5D;
+$primary-3: #B85682;
+$primary-2: #D293AF;
+$primary-1: #F1CBDA; // Lightest Primary Color
+
+$greys-10: #222222; // Darkest Grey 
+$greys-9: #3B3B3B;
+$greys-8: #515151;
+$greys-7: #626262;
+$greys-6: #7E7E7E;
+$greys-5: #9E9E9E;
+$greys-4: #B1B1B1;
+$greys-3: #CFCFCF;
+$greys-2: #E1E1E1;
+$greys-1: #F7F7F7; // Lightest Grey
+
+$danger: #921111;
+$warning: #C89C2D;
+
+// Default styles that apply to the whole page.
+body {
+  font-family: 'Hind Vadodara', sans-serif; // Ensure that all the fonts follow the brand design
+  color: $greys-10;                         // and the text is all the same color
+}
+
+// Styling the table and all of its cells. 
+#study-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0;
+  padding: 0; 
+  // Style the Header of the table
+  th {
+    text-transform: uppercase;
+    text-align: left;
+    background-color: $primary-3;
+    color: $greys-1;
+    font-size: 1.1em;
+  } 
+  // Cell padding so the table looks better responsively. 
+  td {
+    padding: 5px 40px 5px 0;
+  } 
+  // Make every other row slightly darker
+  tr:nth-child(even) {
+    background-color: $greys-2;
+  } 
+  // Highlight the row when hovered over.
+  tr:hover {
+    background-color: $primary-1;
+    transition: all 300ms ease-in-out;
+  } 
+  // Style the button
+  .study-table-btn {
+    border: none;
+    border-radius: 5px;
+    background: $primary-3;
+    color: $greys-1;
+    transition: all 500ms ease-in-out;
+  } 
+  // When hovering over the button change its colour
+  .study-table-btn:hover {
+    background-color: $danger;
+    cursor: pointer;
+  } 
+  // Change the colour to a brand warning colour
+  .inProgress {
+    color: $warning;
+    font-weight: 600;
+  } 
+  //Change the colour to a brand primary colour
+  .completed {
+    color: $primary-5;
+    font-weight: 600;
+  } 
+  // Make the text bold for the Not Started status
+  .notStarted {
+    font-weight: 600;
+  }
+}
